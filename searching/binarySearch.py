@@ -19,29 +19,21 @@ def binary_search(array : list, key : int) -> int:
         Index at which given number appears in list. -1 if not found.
     """
 
-    stuff = []
+    start, end = 0, len(array) - 1
 
-    while True:
+    while start <= end:
+        x = (start + end) // 2
 
-        startingIndex = len(array) // 2
-        stuff.append(startingIndex)
+        if array[x] == key:
+            return x
 
-        if key > array[startingIndex]:
-            if len(array) == 1:
-                return -1
-            array = array[startingIndex:]
+        elif array[x] > key:
+            end = x - 1
 
+        elif array[x] < key:
+            start = x + 1
 
-        elif key < array[startingIndex]:
-
-            if len(array) == 1:
-                return -1
-
-            array = array[:startingIndex]
-            stuff.append(-1*startingIndex)
-
-        elif key == array[startingIndex]:
-            return sum(stuff)
+    return -1
 
 
 
@@ -55,7 +47,7 @@ if __name__ == '__main__':
 
     t1 = time.perf_counter()
 
-    # Will take average of ~ 0.0009 seconds if minimum system requirements are met
+    # Will take average of ~ 0.014 seconds if minimum system requirements are met
     print(binary_search(sorted(objects),key))
 
     t2 = time.perf_counter()
@@ -72,7 +64,7 @@ if __name__ == '__main__':
 
         t1 = time.perf_counter()
 
-        binary_search(objects, key)
+        binary_search(sorted(objects), key)
 
         t2 = time.perf_counter()
         count.append(t2 - t1)

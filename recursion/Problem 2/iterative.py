@@ -14,6 +14,8 @@ def palindrome(word : str) -> int:
        number of palindromes in string
 
     """
+    
+    word = word.lower()
 
     count = []
 

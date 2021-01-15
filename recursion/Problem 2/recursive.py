@@ -14,7 +14,9 @@ def palindrome(word : str) -> int:
        number of palindromes in string
 
     """
-
+    
+    word = word.lower()
+    
     if len(word) in [2, 3]:
         return 1 if word[0] == word[-1] else 0
 

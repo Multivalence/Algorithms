@@ -8,12 +8,12 @@ def substrings(word : str) -> list:
 	Parameters
 	----------
 	word : str
-			String that may contain palindrome sub-strings
+		String that may contain palindrome sub-strings
 
 	Returns
 	-------
 	list
-			all palindromic sub-strings found in word
+		all palindromic sub-strings found in word
 
 	"""
 
@@ -39,12 +39,12 @@ def palindrome(word : str) -> int:
 	Parameters
 	----------
 	word : str
-			String that may contain palindrome sub-strings
+		String that may contain palindrome sub-strings
 
 	Returns
 	-------
 	int
-			number of palindromes in string
+		number of palindromes in string
 
 	"""
 

@@ -48,7 +48,7 @@ def palindrome(word : str) -> int:
 
 	"""
 
-	return len(substrings(word))
+	return len(substrings(word.lower()))
 	
 
 if __name__ == '__main__':

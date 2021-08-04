@@ -1,2 +1,2 @@
 # Algorithms
-Algorithms Assignment for ICS4U
+Handy collection of Algorithms and Problems to know.

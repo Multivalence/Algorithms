@@ -1,2 +1,2 @@
 # Algorithms
-Handy collection of Algorithms and Problems to know.
+Handy collection of Algorithms to know.
